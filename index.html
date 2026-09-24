@@ -182,7 +182,7 @@
       var programmeNavButtons=Array.prototype.slice.call(programmeNav.querySelectorAll('button'));
       var storageKey='uncle-aunt-fall-prevention-statistics-v1', activeProfileKey='', activeProfile=null;
       /* ====== ตั้งค่า Google Sheet ====== วาง URL ของ Google Apps Script Web App (ลงท้ายด้วย /exec) ระหว่างเครื่องหมายคำพูดด้านล่าง */
-      var SHEET_ENDPOINT='https://script.google.com/macros/s/AKfycbwZjJDori6tsIQJo_fw4JF45uIIvEqpGII4X78mDThoFg1ZiIFFOyabG4ifHWDY1ANR/exec';
+      var SHEET_ENDPOINT='https://script.google.com/macros/s/AKfycbwot400jIkXeH626KD6oX1TJ1F20VmxmjSER9DXZ7DwGGT6wwKumHzKTqeJD4fMWjHf/exec';
       try{var epOverride=window.localStorage.getItem('uncle-aunt-sheet-endpoint');if(epOverride)SHEET_ENDPOINT=epOverride;}catch(e){}
       var DEVICE_ID=(function(){try{var d=window.localStorage.getItem('uncle-aunt-device-id');if(!d){d='dev-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);window.localStorage.setItem('uncle-aunt-device-id',d);}return d;}catch(e){return 'dev-unknown';}})();
       function uaUuid(){return 'r-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10);}
